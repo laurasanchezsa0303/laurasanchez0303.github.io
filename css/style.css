@@ -1,0 +1,373 @@
+html {
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Bebas Neue';
+    text-decoration: none;
+}
+
+.img {
+    width: 20%;
+    height: auto;
+    }
+
+.logo {
+    border: 10px ;
+    width: 60px;
+}
+
+
+.container{
+    display: flex;
+    width: 70%;
+    max-width: 1700px;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    background-color: rgb(174, 142, 250);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+
+}
+
+nav .nav {
+    padding: .9em 0em;
+}
+
+nav .container ul li {
+    display: inline;
+    padding: .2em;
+}
+
+nav .container ul li a{
+    font-size: 1em;
+    color: #ffffff;
+    padding: .8em 1em;
+    border-radius: 10px;
+}
+
+nav .container ul li a:hover{
+    color: beige;
+    background-color:rgb(213, 197, 252);
+}
+
+/*PERFIL*/
+.bienvenida {
+    display:flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.bienvenida {
+    flex-grow:2;
+    border: px ;
+}
+
+.bienvenida .imagenes{
+    border: 3px solid;
+    padding: 60px;
+}
+
+.presentacion { 
+    padding: 64px;
+    flex-grow: 1;
+    font-weight: 200;
+    color: rgb(179, 124, 231);
+    text-align: left;
+}
+
+.presentacion h1 {
+    font-size: 2em;
+    color: rgb(160, 53, 170);
+}
+
+.bienvenida .down {
+    margin-top: 3em;
+    align-content: center;
+}
+
+.bienvenida {
+    background-color: #ffffff;
+    clip-path: (0 0,100% 0,100% calc(100% - 50px),50% 100%,0 calc(100% - 50px));
+    padding-top: 90px;
+    align-items: center;
+}
+
+div .perfil ul li {
+    display: inline;
+    padding: .2em;
+}
+
+div .perfil ul li a{
+    font-size: 1em;
+    color: #de3aff;
+    padding: .8em 1em;
+    border-radius: 10px;
+}
+
+div .perfil ul li a:hover{
+    color: #ffffff;
+    background-color:#ab4df8;
+}
+
+.wrap1 {
+    display: flex;
+    width: 70%;
+    max-width: 1700px;
+    margin: auto;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.wrap2 {
+    width: 70%;
+    max-width: 1700px;
+    margin: auto;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+}
+
+.justify-content {
+    gap: 60px;
+    border: 8px;
+}
+
+.video{
+    background-color: blueviolet;
+    padding: 5em;
+    text-align: center;
+}
+
+.servicios {
+    padding: 7em;
+    background-color: rgb(160, 53, 170);
+}
+
+.justify-content{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.trabajos {
+    padding: 7em;
+    text-align: center;
+    padding-top: 3em;
+    background-color: rgb(167, 158, 253); 
+    color: #ffffff;  
+}
+
+.contacto {
+    align-items: center;
+    padding: 3em;
+    background-color: rgb(127, 135, 252);
+    text-align: center;
+    color: #ffffff;
+}
+
+/*inicio de slider*/
+.swiper {
+    width: 50%;
+    height: 50%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
+
+  /*En el pdf:
+  circulos: imagenes
+  cuadrados: textos
+  cuadrados redondeados: hipervinculos*/
+
+
+  /*RESPOSIVE*/
+
+@media (min-width: 768px) and (max-width: 1024px){
+    *{
+        width: 100%;
+        align-items: flex-start;
+    }
+    .img {
+        width: 20%;
+        height: auto;
+        }
+    
+    .logo {
+        border: 10px ;
+        width: 90px;
+        margin-left: 6em;
+        margin-right: 30em;
+    }
+    
+   
+    .container{
+        display: flex;
+        width: 100%;
+        max-width: 1700px;
+       padding-inline-start: 90px;
+    }
+    
+    nav {
+        background-color: rgb(174, 142, 250);
+        position: fixed;
+        width: 120%;
+        z-index: 100;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    
+    nav .nav {
+        padding: .9em 0em;
+    }
+    
+    nav .container ul li {
+        display: inline;
+        padding: .2em;
+        justify-content: space-between;
+    }
+    
+    nav .container ul li a{
+        font-size: 1em;
+        color: #ffffff;
+        padding: .8em 1em;
+        border-radius: 10px;
+        width: 100%;
+    }
+    
+    nav .container ul li a:hover{
+        color: beige;
+        background-color:rgb(213, 197, 252);
+    }
+    
+    /*PERFIL*/
+    .bienvenida {
+        display:flex;
+        width: 120%;
+        justify-content: space-between;
+    }
+    
+    .bienvenida .imagenes{
+        border: 3px solid;
+        padding: 40px;
+    }
+    
+    .presentacion { 
+        flex-grow: 1;
+        font-weight: 200;
+        color: rgb(179, 124, 231);
+        text-align: left;
+    }
+    
+    .presentacion h1 {
+        font-size: 2em;
+        color: rgb(160, 53, 170);
+    }
+    
+    .bienvenida .down {
+        margin-top: 3em;
+        align-content: center;
+    }
+    
+    
+    div .perfil ul li {
+        display: flex;
+        padding: .2em;
+    }
+    
+    div .perfil ul li a{
+        font-size: 1em;
+        color: #de3aff;
+        padding: 0.8em 0.5em;
+        border-radius: 50px;
+    }
+    
+    div .perfil ul li a:hover{
+        color: #ffffff;
+        background-color:#ab4df8;
+    }
+    
+    .wrap1 {
+        display: flex;
+        width: 80%;
+        max-width: 1700px;
+        margin: 2em;
+        text-align: center;
+        color: rgb(255, 255, 255);
+    }
+    
+    .wrap2 {
+        width: 90%;
+        max-width: 1700px;
+        margin: auto;
+        text-align: center;
+        color: rgb(255, 255, 255);
+        font-size: 18px;
+    }
+    
+    .justify-content {
+        gap: 60px;
+        border: 8px;
+    }
+    
+    .video{
+        background-color: blueviolet;
+        padding: 6em;
+        text-align: center;
+        width: 120%;
+    }
+    
+    .servicios {
+        padding: 2em;
+        background-color: rgb(160, 53, 170);
+        width: 120%;}
+
+    .trabajos {
+        padding: 5em;
+        text-align: center;
+        padding-top: 3em;
+        background-color: rgb(167, 158, 253); 
+        color: #ffffff;  
+        width: 120%;
+    }
+    
+    .contacto {
+        align-items: center;
+        padding: 2em;
+        background-color: rgb(127, 135, 252);
+        text-align: center;
+        color: #ffffff;
+        width: 120%;
+    }
+    
+}
+
+
+@media (min-width: 481px) and (max-width: 767px) {
+  *{
+        width: 100%;
+        align-items: flex-start;
+    }
+}
+/* ##Dispositivo = Smartphones de 320px a 479px */
+@media (min-width: 320px) and (max-width: 480px) {
+    /*Aquí van las propiedades y valores según el dispositivo*/
+}

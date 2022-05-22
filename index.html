@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTAFOLIO</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat+Alternates:ital,wght@0,200;0,900;1,500&family=Raleway:wght@200;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="assets/icons/css/all.css">
+
+<!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
+<!--Librería-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+
+
+    <nav class="navegador__header">
+        <div class="container nav">
+            <div class="logo">
+              <a href="#"><img src="imgs/firma lau_def.svg" alt="FIRMA" ></a>
+            </div>
+            <ul>
+                <li><a href="#seccion2">SERVICIOS</a></li>
+                <li><a href="#seccion3">TRABAJOS</a></li>
+                <li><a href="#seccion4">VIDEO</a></li>
+                <li><a href="#seccion5">CONTACTO</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="bienvenida" id="seccion1"> 
+
+      <article class="wrap1">
+      <div class="imagenes">   
+        <a href="#"><img src="imgs/photo_2022-01-12_12-15-54.png" alt="foto LAURA SÁNCHEZ" ></a>  
+       </div> 
+      
+
+          <div class="presentacion">
+               <article class="perfil">
+                  <h1>PERFIL</h1>
+                  <p>Estudiante de Diseño Gráfico, poseo sólidos conocimientos en Adobe Illustrator, InDesign y Photoshop, 
+                    conocimiento medio en Adobe Premiere y After Effects; cuento con capacidad para diseñar proyectos digitales, elaborar 
+                    diagramación y maquetación de piezas editoriales, con experiencia en diseño editorial, diseño de identidad 
+                    corporativa, fotografía,  ilustración  análoga  y digital. <br>
+                    <br>Con actitud de escucha, competencias para el trabajo en equipo, 
+                    sensible, creativa, analítica y reflexiva, con habilidades para responder y satisfacer las necesidades del cliente. 
+                    Como estudiante de universidad me dispongo, esfuerzo y apasiono por alcanzar cada día más  conocimientos sobre diseño 
+                    gráfico. </p>
+                      <ul>
+                        <li><a class="down animate__animated animate__bounceInDown animate__slower	3s	infinite fa-solid fa-circle-chevron-down" href="#behance"> BEHANCE</a></li>
+                        <li><a class="down animate__animated animate__bounceInDown animate__slower	3s fa-solid fa-circle-chevron-down" href=""> DESCARGAR HOJA DE VIDA</a></li>
+                    </ul>
+                  </article>
+                </div>        
+    </section>
+     
+    <section class="servicios" id="seccion2">
+        <div class="wrap2">
+            <h1>Servicios</h1>
+            <p>Fotografia de producto, ilustración digital y diseño editorial</p>
+            <div class="container justify-content">
+              <article class="item1"> <img src="imgs/reloj.png" alt="reloj"> </article>
+              <article class="item2"> <img src="imgs/JESS.png" alt="Ilustracion"> </article>
+              <article class="item3"> <img src="imgs/editorial3.png" alt="diseño editorial"> </article>
+            </div>
+
+</section>
+
+<section class="trabajos" id="seccion3">
+    <div class="wrap">
+        <h1>MIS TRABAJOS</h1>
+        <p>En esta galeria puedes ver una recopilación de mis mejores proyectos.</p>
+
+        <!-- Swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="imgs/Diplomado4-01-01.png" />
+          </div>
+          <div class="swiper-slide">
+            <img src="imgs/FOTOS_02.png" />
+          </div>
+          <div class="swiper-slide">
+            <img src="imgs/ilustracion dig3.png" />
+          </div>
+          <div class="swiper-slide">
+            <img src="imgs/caballo.png" />
+          </div>
+          <div class="swiper-slide">
+            <img src="imgs/PORTADA-02.png" />
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+    </div>
+</section>
+
+<section class="video" id="seccion4">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/vqHanpGLP4w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</section>
+
+<section class="contacto" id="seccion5">
+  <div class="wrap3">
+      <h1>CONTACTO</h1>
+      <p>Laura Alexandra Sánchez Saldarriaga <br>
+         lauragraphic0@gmail.com  <br>
+         300.876.17.91 </p>
+  </div>
+</section>
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    coverflowEffect: {
+      rotate: 50,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: true,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+    },
+  });
+</script>
+</body>
+</html>
+
